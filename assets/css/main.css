@@ -1,0 +1,71 @@
+body {
+  background: url("../img/bg-img.jpg");
+  background-size: 450px 200px;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+}
+.img,
+img {
+  width: auto;
+  height: 350px;
+  border-radius: 100%;
+  text-align: center;
+}
+h2, h3{
+  display: inline;
+}
+h2 {
+  color: #ff5959;
+}
+h3, h4{
+  font-weight: normal;
+}
+ul li {
+  list-style-type: square;
+}
+.container {
+  margin: 3% 15% 3% 15%;
+}
+.column1 {
+  float: left;
+  width: 50%;
+}
+.column2 {
+  float: left;
+  width: 50%;
+}
+.topic {
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 4px solid #828282;
+  color: #e84646;
+  margin-bottom: 50px;
+}
+.topic i {
+  font-size: 30px;
+  padding-top: 20px;
+}
+.theme {
+  float: right;
+  cursor: pointer;
+}
+.hardSkill {
+  margin-top: 20px;
+}
+.hardSkill,
+.softSkill {
+  margin-left: 40px;
+}
+#bright{
+  display: none;
+}
+#dark{
+  display: block;
+}
+#date{
+  font-size: 10px;
+  color: #67a272;
+}
