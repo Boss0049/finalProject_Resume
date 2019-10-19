@@ -14,13 +14,15 @@ img {
   border-radius: 100%;
   text-align: center;
 }
-h2, h3{
+h2,
+h3 {
   display: inline;
 }
 h2 {
   color: #ff5959;
 }
-h3, h4{
+h3,
+h4 {
   font-weight: normal;
 }
 ul li {
@@ -59,13 +61,70 @@ ul li {
 .softSkill {
   margin-left: 40px;
 }
-#bright{
+#bright {
   display: none;
 }
-#dark{
+#dark {
   display: block;
 }
-#date{
+#date {
   font-size: 10px;
   color: #67a272;
+}
+/* set-responsive */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .column1 {
+    width: 100%;
+    border-bottom: 2px solid #e84646;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .img,
+  img {
+    width: auto;
+    height: 200px;
+    border-radius: 100%;
+    text-align: center;
+  }
+  .topic {
+    font-size: 25px;
+  }
+  #bright,
+  #dark,
+  #hover {
+    font-size: 20px;
+    color: #e84646 !important;
+  }
+  #date {
+    position: absolute;
+    margin-top: 10px;
+    display: block;
+    color: #e84646;
+  }
+  .hardSkill,
+  .softSkill {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-device-width: 569px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .column1 {
+    width: 100%;
+    border-bottom: 2px solid #e84646;
+  }
+  .column2 {
+    width: 100%;
+  }
+  #bright,
+  #dark,
+  #hover {
+    color: #e84646 !important;
+  }
+  #date {
+    position: absolute;
+    margin-top: 10px;
+    display: block;
+    color: #e84646;
+  }
 }
