@@ -11,18 +11,21 @@
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
       rel="stylesheet" />
-
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <!-- local file -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="./assets/js/main.js"></script>
   </head>
-  <body>
-    <div onmouseover="onHover()" onmouseout="onOut()" class="container">
+  <body id="body">
+    <div id="mouseover" class="container">
+ 
       <div class="topic">
         <span>ABOUT ME</span>
         <i id="hover" class="fas fa-user"></i>
         <span id="date"></span>
-        <i id="bright" class="fas fa-sun theme"  onclick="closeTheme()" ></i>
         <i id="dark" class="fas fa-moon theme" onclick="showTheme()"></i>
+        <i id="bright" class="fas fa-sun theme"  onclick="closeTheme()" ></i>
       </div>
       <div class="row">
         <div class="column1">
@@ -40,7 +43,7 @@
         <div class="column2">
           <p class="name">
               <h2>Name : </h2>
-              <h3>Kotchakorn Mawattananukool</h3>
+              <h3 id="name">Kotchakorn Mawattananukool</h3>
           </p>
           <p class="nickname">
                 <h2>Nickname : </h2>
@@ -51,11 +54,12 @@
                 <h3>Applied Computer Science Multimedia @ KMUTT </h3>
           </p>
           <p class="skill">
-              <h2>Skills</h2>
+              <h2>Skills </h2>
+              <i id="btnRemove" class="far fa-trash-alt"></i>
               <div class="hardSkill">
                 <h3>Hard Skills</h3>
                 <h3>
-                <ul>
+                <ul id="hardSkill">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JS</li>
@@ -67,18 +71,29 @@
               <div class="softSkill">
                 <h3>Soft Skills</h3>
                 <h3>
-                <ul>
+                <ul id="softSkill">
                   <li>Teamwork</li>
                   <li>Communication</li>
                   <li>Friendly Personality</li>
-                  <li>Graphic Design</li>
-                  <li>Animation (simple model)</li>
+                  <li>Adaptability</li>
                 </ul>
                 </h3>
               </div>
           </p>
         </div>
       </div>
+      <!-- *****Dynamic***** -->
+      <div id="repair">
+        <input type="text" id="fname" placeholder="Enter your name">
+        <i id="changeName" class="far fa-paper-plane"></i>
+
+        <input id="hSkill" type="text" placeholder="Enter your hard skill">
+        <i id="btnAdd1" class="fas fa-plus"></i>
+
+        <input id="sSkill" type="text" placeholder="Enter your soft skill">
+        <i id="btnAdd2" class="fas fa-plus"></i>
+        <h4 style="color: #ff5959;"> *you can click at list skill for select then click icon bin for delete.</h4>
+      </div>     
     </div>
   </body>
 </html>
